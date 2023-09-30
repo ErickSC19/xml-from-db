@@ -31,6 +31,14 @@ const Products = connectDB.define('Products', {
 await Products.sync();
 
 export default async function  queryDatabase(pk) {
+  try {
     const res = await Products.findByPk(pk);
-    return res.dataValues;
+    if (res) {
+      return res.dataValues;
+    } else {
+      console.log('Entry does not exist.');
+    }
+  } catch (error) {
+    console.log(error);
+  }
 }

@@ -1,3 +1,12 @@
+CREATE TABLE `products` (
+  `id` int NOT NULL AUTO_INCREMENT,
+  `name` varchar(255) NOT NULL,
+  `price` float NOT NULL,
+  `count` int NOT NULL,
+  PRIMARY KEY (`id`),
+  UNIQUE KEY `count` (`count`)
+) ENGINE=InnoDB AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+
 insert into products (id, name, price, count) values (1, 'Tray - 16in Rnd Blk', 84.76, 63);
 insert into products (id, name, price, count) values (2, 'Onions - Cooking', 29.41, 51);
 insert into products (id, name, price, count) values (3, 'Cheese Cheddar Processed', 14.82, 69);
