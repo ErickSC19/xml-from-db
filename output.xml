@@ -1,7 +1,8 @@
-<?xml version="1.0"?>
-<product>
-  <id>4</id>
-  <name>Cheese - Cheddar, Mild</name>
-  <price>97.97</price>
-  <count>35</count>
-</product>
+<?xml version="1.0" encoding="UTF-8"?>
+<products>
+  <product id="3">
+    <name>Cheese Cheddar Processed</name>
+    <price>14.82</price>
+    <count>69</count>
+  </product>
+</products>
