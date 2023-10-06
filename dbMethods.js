@@ -36,7 +36,7 @@ export default async function  queryDatabase(pk) {
     if (res) {
       return res.dataValues;
     } else {
-      console.log('Entry does not exist.');
+      console.log('-> Entry does not exist.\n');
     }
   } catch (error) {
     console.log(error);

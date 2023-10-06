@@ -24,10 +24,12 @@ async function main() {
         case "1":
           const n = await askQuestion(rl, '-> Give a number for an entry id:');
           const dbResult = await queryDatabase(n); 
-          console.log(dbResult);
-          const xmlData = convertToXML(dbResult);
-          writeXMLToFile(xmlData, 'output.xml');
-          console.log('---File created successfully--- \n');
+          if (dbResult) {
+            console.log(dbResult);
+            const xmlData = convertToXML(dbResult);
+            writeXMLToFile(xmlData, 'output.xml');
+            console.log('---File created successfully--- \n');
+          }
           break;
         case "2":
           runs = false;
