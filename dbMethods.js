@@ -18,7 +18,6 @@ const Products = connectDB.define('Products', {
     },
     count: {
       type: DataTypes.INTEGER,
-      unique: true,
       allowNull: false,
       validate: {
         isEmail: true,
